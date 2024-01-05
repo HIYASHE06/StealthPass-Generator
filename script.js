@@ -89,10 +89,39 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
-function getPasswordOptions() {
+function getPasswordOptions(options) {
+        prompt("Desired length of your password\n-----------------------------------------------\n Choose between 8 and 128 characters") 
+        //code to produce an error 
 
+// Present a series of prompts for password criteria:
+
+// Length of password:
+
+// At least 8 characters but no more than 128.
+
+// Character types:
+
+// Lowercase
+
+// Uppercase
+
+// Numeric
+
+// Special characters ($@%&*, etc.)
+
+// Code should validate for each input and at least one character type should be selected.
+
+// Once all prompts are answered, the password should be generated and displayed in an alert or written to the page.
 }
+getPasswordOptions();
+//pseudocode
+//0) prompt that ask how many characters the user wants to include.
+//1) prompts that asks if user wants to include lower and uppercase in the passward.
+//2) prompts thats ask if the user wants to include numeric and special characters.
 
+// HOW DO I MAKE SURE ALL THE CHARACTERS ARE INCLUDED IN THE PASSWORD
+
+/*NEXT STEP */
 // Function for getting a random element from an array
 function getRandom(arr) {
 

@@ -90,7 +90,21 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions(options) {
-        prompt("Desired length of your password\n-----------------------------------------------\n Choose between 8 and 128 characters") 
+  do {var passwordLength=parseInt(prompt("Desired length of your password\n-----------------------------------------------\n Choose between 8 and 128 characters"));
+  console.log(typeof passwordLength);
+          if (passwordLength>=8 &&passwordLength<=128){
+          alert("Your password will contain "+passwordLength+" characters")
+      } else {alert("Requiremenst not met,\nTRY AGAIN");}
+  
+          
+      } while (!(passwordLength>=8 &&passwordLength<=128));
+      
+  confirm("Do you want your password to have uppercases\n🔠.");
+      confirm("Do you want your password to have lowercases\n🔡.");
+      confirm("Do you want your password to have numeric values\n🔢.");
+      confirm("Do you want your password to have special characters\n$@%&*, etc.");
+  }getPasswordOptions();
+
         //code to produce an error 
 
 // Present a series of prompts for password criteria:
@@ -112,8 +126,7 @@ function getPasswordOptions(options) {
 // Code should validate for each input and at least one character type should be selected.
 
 // Once all prompts are answered, the password should be generated and displayed in an alert or written to the page.
-}
-getPasswordOptions();
+
 //pseudocode
 //0) prompt that ask how many characters the user wants to include.
 //1) prompts that asks if user wants to include lower and uppercase in the passward.

@@ -96,19 +96,24 @@ function getPasswordOptions() {
   console.log(typeof passwordLength);
           if (passwordLength>=8 &&passwordLength<=128){
           alert("Your password will contain "+passwordLength+" characters")
-      } else {alert("Requiremenst not met,\nTRY AGAIN");}
-
-
-      } while (!(passwordLength>=8 &&passwordLength<=128));// while statement will repeat the fuction till the condition becomes true
+      } else {alert("Requiremenst not met,\nTRY AGAIN");
+      }} while (!(passwordLength>=8 &&passwordLength<=128));// while statement will repeat the fuction till the condition becomes true
       
-      upperCase=confirm("Do you want your password to have uppercases\n🔠.");
-      
+  var upperCase=confirm("Do you want your password to have uppercases\n🔠.");
       lowerCase=confirm("Do you want your password to have lowercases\n🔡.");
       numericValue=confirm("Do you want your password to have numeric values\n🔢.");
-      specialCharacters=confirm("Do you want your password to have special characters\n$@%&*, etc.");
+      specialCharacters=confirm("Do you want your password to have special characters\n$@%&*, etc.");  
 
-
-//generate password with user input
+while (upperCase===false &&// this code will repeat until one confirm is true
+  lowerCase===false &&
+  numericValue===false &&
+  specialCharacters===false) {
+  prompt("You have to select at least one charatcer for a password to be generated")
+  var upperCase=confirm("Do you want your password to have uppercases\n🔠.");
+  lowerCase=confirm("Do you want your password to have lowercases\n🔡.");
+  numericValue=confirm("Do you want your password to have numeric values\n🔢.");
+  specialCharacters=confirm("Do you want your password to have special characters\n$@%&*, etc.");
+}
       var passwordCharacters = [];
         if (upperCase) {
             passwordCharacters = passwordCharacters.concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''));
@@ -128,6 +133,7 @@ function getPasswordOptions() {
             password += getRandom(passwordCharacters);
         }
         return password;}
+      
         
 
 // Function for getting a random element from an array

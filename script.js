@@ -99,7 +99,7 @@ function getPasswordOptions() {
       } else {alert("Requiremenst not met,\nTRY AGAIN");
       }} while (!(passwordLength>=8 &&passwordLength<=128));// while statement will repeat the fuction till the condition becomes true
       
-  var upperCase=confirm("Do you want your password to have uppercases\n🔠.");
+  var upperCase=confirm("Do you want your password to have uppercases\n🔠.");//global variables
       lowerCase=confirm("Do you want your password to have lowercases\n🔡.");
       numericValue=confirm("Do you want your password to have numeric values\n🔢.");
       specialCharacters=confirm("Do you want your password to have special characters\n$@%&*, etc.");  
@@ -108,7 +108,7 @@ while (upperCase===false &&// this code will repeat until one confirm is true
   lowerCase===false &&
   numericValue===false &&
   specialCharacters===false) {
-  prompt("You have to select at least one charatcer for a password to be generated")
+  prompt("You have to select at least one charatcer for a password to be generated") //local variables
   var upperCase=confirm("Do you want your password to have uppercases\n🔠.");
   lowerCase=confirm("Do you want your password to have lowercases\n🔡.");
   numericValue=confirm("Do you want your password to have numeric values\n🔢.");

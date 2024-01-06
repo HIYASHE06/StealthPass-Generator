@@ -128,8 +128,7 @@ function getPasswordOptions() {
             password += getRandom(passwordCharacters);
         }
         return password;}
-        // alert("Your password is: " + password);
-  // }getPasswordOptions();
+        
 
 // Function for getting a random element from an array
   function getRandom(arr) {

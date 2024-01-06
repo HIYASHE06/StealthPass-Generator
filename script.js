@@ -105,56 +105,37 @@ function getPasswordOptions() {
       lowerCase=confirm("Do you want your password to have lowercases\n🔡.");
       numericValue=confirm("Do you want your password to have numeric values\n🔢.");
       specialCharacters=confirm("Do you want your password to have special characters\n$@%&*, etc.");
+//generate password with user input
+      var passwordCharacters = [];
+        if (upperCase) {
+            passwordCharacters = passwordCharacters.concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(''));
+        }
+        if (lowerCase) {
+            passwordCharacters = passwordCharacters.concat('abcdefghijklmnopqrstuvwxyz'.split(''));
+        }
+        if (numericValue) {
+            passwordCharacters = passwordCharacters.concat(numericCharacters);
+        }
+        if (specialCharacters) {
+            passwordCharacters = passwordCharacters.concat(specialCharacters);
+        }
+    
+        var password = '';
+        for (var i = 0; i < passwordLength; i++) {
+            password += getRandom(passwordCharacters);
+        }
+    
+        alert("Your password is: " + password);
   }getPasswordOptions();
 
-// Present a series of prompts for password criteria:
-
-// Length of password:
-
-// At least 8 characters but no more than 128.
-
-// Character types:
-
-// Lowercase
-
-// Uppercase
-
-// Numeric
-
-// Special characters ($@%&*, etc.)
-
-// Code should validate for each input and at least one character type should be selected.
-
-// Once all prompts are answered, the password should be generated and displayed in an alert or written to the page.
-
-//pseudocode
-//0) prompt that ask how many characters the user wants to include.
-//1) prompts that asks if user wants to include lower and uppercase in the passward.
-//2) prompts thats ask if the user wants to include numeric and special characters.
-
-// HOW DO I MAKE SURE ALL THE CHARACTERS ARE INCLUDED IN THE PASSWORD
-
-/*NEXT STEP */
 // Function for getting a random element from an array
 
   function getRandom(arr) {
-    indexValue= (Math.ceil(Math.random()*arr.length))-1// -1 keeps the highest number below 10 since l used ceil
-    console.log(indexValue);  
+    indexValue= (Math.ceil(Math.random()*arr.length))-1// -1 keeps the highest number below 10 since l used ceil  
     var random00=arr[indexValue]; 
-    console.log("og random genarator "+random00);
+    return random00
             
     }
-getRandom(numericCharacters);
-getRandom(specialCharacters);
-getRandom(upperCasedCharacters);
-getRandom(lowerCasedCharacters);
-
-
-
-// Function to generate password with user input
-function generatePassword() {
-
-}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');

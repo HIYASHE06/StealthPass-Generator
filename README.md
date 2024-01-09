@@ -8,7 +8,8 @@
 ## Output
 
 The following image and video show the web application's appearance and functionality:
-![alt text](./spg1.png).
+![alt text](./spg1.png)
+https://github.com/HIYASHE06/StealthPass-Generator/assets/152214043/6183fb37-4ff7-42b2-9c71-1b4871c06961
 
 ## How to Use
 

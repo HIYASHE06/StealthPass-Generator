@@ -1,12 +1,28 @@
-# StealthPass-Generator.[EOF]
+# StealthPass-Generator
 
 ## Description
 
-## Usage
+ The application generates a random password based on the criteria the user picks.
+ The user interface is clean, polished and responsive, and it adapts to multiple screen sizes.
 
 ## Output
 
+The following image and video show the web application's appearance and functionality:
+![alt text](./spg1.png).
+
 ## How to Use
+
+A series of prompts are present for the password criteria
+
+* Length of password.
+* At least 8 characters but no more than 128.
+* Character types
+* Lowercase
+* Uppercase
+* Numeric
+* Special characters ($@%*, etc)
+* Code validates for each input and at least one character type should be selected
+* A password is generated when the button is clicked
 
 ## License
 

@@ -11,19 +11,27 @@ The following image and video show the web application's appearance and function
 ![alt text](./spg1.png)
 https://github.com/HIYASHE06/StealthPass-Generator/assets/152214043/6183fb37-4ff7-42b2-9c71-1b4871c06961
 **DEPLOYED WEBSITE LINK**https://hiyashe06.github.io/StealthPass-Generator/
+
+## Usage
+
+To use stealthPass-Generactor, simply open the HTML file in your web browser and click the 'Generate Password' button. You'll be prompted to enter your password options, and then a password will be generated for you based on your choices.
+
 ## How to Use
 
-A series of prompts are present for the password criteria
+A series of prompts are presented for the password criteria
 
-* Length of password.
-* At least 8 characters but no more than 128.
-* Character types
+The prompts ask about
+
+**Length of password.**
+* At least 8 characters but no more than 128
+
+**Character types**
 * Lowercase
 * Uppercase
 * Numeric
 * Special characters ($@%*, etc)
-* Code validates for each input and at least one character type should be selected
-* A password is generated when the button is clicked
+  
+Code validates for each input and at least one character type should be selected
 
 ## License
 

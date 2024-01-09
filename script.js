@@ -108,7 +108,7 @@ while (upperCase===false &&// this code will repeat until one confirm is true
   lowerCase===false &&
   numericValue===false &&
   specialCharacters===false) {
-  prompt("You have to select at least one charatcer for a password to be generated") //local variables
+  alert("You have to select at least one character type for a password to be generated") //local variables
   var upperCase=confirm("Do you want your password to have uppercases\n🔠.");
   lowerCase=confirm("Do you want your password to have lowercases\n🔡.");
   numericValue=confirm("Do you want your password to have numeric values\n🔢.");
